@@ -1,0 +1,68 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = 'からだサポートSUZURAN（すずらん）| 福島県いわき市の整体院', description = '福島県いわき市の整体院。DRT整体、産後骨盤矯正、マタニティ整体、水素足湯デトックス、黄土よもぎ蒸し。日本DRT協会インストラクターが施術を担当。' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.goo gleapis.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--color-primary: #2563eb;
+		--color-secondary: #1e40af;
+		--color-text: #1f2937;
+		--color-text-light: #6b7280;
+		--color-bg: #ffffff;
+		--color-bg-gray: #f3f4f6;
+		--color-border: #e5e7eb;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		min-height: 100%;
+		font-family: 'Noto Sans JP', sans-serif;
+		color: var(--color-text);
+		line-height: 1.7;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	button {
+		font-family: inherit;
+	}
+</style>

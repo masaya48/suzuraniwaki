@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:mahounote-seitai.com)",
+      "WebFetch(domain:www.gurutto-iwaki.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

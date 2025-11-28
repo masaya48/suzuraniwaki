@@ -1,0 +1,238 @@
+---
+---
+
+<section class="director-testimonials">
+	<div class="container">
+		<div class="director">
+			<h2 class="section-title">院長挨拶</h2>
+			<div class="director-content">
+				<div class="director-image">
+					<div class="image-placeholder">院長写真</div>
+				</div>
+				<div class="director-text">
+					<h3 class="director-name">院長　山田 太郎</h3>
+					<p class="director-credentials">
+						柔道整復師 / 鍼灸師<br />
+						国家資格保持者
+					</p>
+					<div class="director-message">
+						<p>
+							はじめまして。整体院すずらん岩木の院長、山田太郎です。
+						</p>
+						<p>
+							私は20年以上、延べ7万人以上の方々の施術に携わってまいりました。その中で、「どこに行っても良くならなかった」「手術しかないと言われた」という方々が、当院の施術で改善されていく姿を数多く見てきました。
+						</p>
+						<p>
+							痛みには必ず原因があります。その原因を見つけ出し、根本から改善することで、多くの方が健康な生活を取り戻されています。
+						</p>
+						<p>
+							一人でも多くの方が、痛みのない快適な生活を送れるよう、全力でサポートさせていただきます。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="testimonials">
+			<h2 class="section-title">お客様の声</h2>
+			<div class="testimonials-grid">
+				<div class="testimonial-card">
+					<div class="testimonial-header">
+						<div class="customer-info">
+							<p class="customer-name">A.K様（50代・女性）</p>
+							<p class="customer-location">弘前市在住</p>
+						</div>
+						<div class="stars">★★★★★</div>
+					</div>
+					<h4 class="testimonial-title">10年悩んだ股関節痛が改善</h4>
+					<p class="testimonial-text">
+						10年以上股関節の痛みに悩まされ、整形外科では手術を勧められていました。こちらに通い始めて3ヶ月、痛みがほとんどなくなり、歩くのが楽になりました。先生の丁寧な説明と施術に感謝しています。
+					</p>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="testimonial-header">
+						<div class="customer-info">
+							<p class="customer-name">T.S様（60代・男性）</p>
+							<p class="customer-location">大鰐町在住</p>
+						</div>
+						<div class="stars">★★★★★</div>
+					</div>
+					<h4 class="testimonial-title">脊柱管狭窄症による歩行困難が改善</h4>
+					<p class="testimonial-text">
+						100mも歩けなかった脚のしびれが、今では1kmも歩けるようになりました。手術を避けられて本当に良かったです。先生の技術力の高さに驚いています。
+					</p>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="testimonial-header">
+						<div class="customer-info">
+							<p class="customer-name">M.H様（40代・女性）</p>
+							<p class="customer-location">弘前市在住</p>
+						</div>
+						<div class="stars">★★★★★</div>
+					</div>
+					<h4 class="testimonial-title">慢性的な肩こり・頭痛から解放</h4>
+					<p class="testimonial-text">
+						20年以上悩んでいた肩こりと頭痛が劇的に改善しました。姿勢の悪さが原因だったことを教えていただき、日々のケア方法も丁寧に指導してくださいました。毎日が快適です。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.director-testimonials {
+		padding: 4rem 0;
+		background: white;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.director {
+		margin-bottom: 4rem;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 3rem 0;
+		position: relative;
+		padding-bottom: 1rem;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 4px;
+		background: var(--color-primary);
+		border-radius: 2px;
+	}
+
+	.director-content {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	.director-image {
+		width: 100%;
+		aspect-ratio: 3/4;
+	}
+
+	.image-placeholder {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-text-light);
+		font-weight: 500;
+	}
+
+	.director-name {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 0.5rem 0;
+	}
+
+	.director-credentials {
+		color: var(--color-primary);
+		font-weight: 500;
+		margin: 0 0 1.5rem 0;
+		line-height: 1.6;
+	}
+
+	.director-message p {
+		color: var(--color-text);
+		line-height: 1.8;
+		margin: 0 0 1rem 0;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+
+	.testimonial-card {
+		background: var(--color-bg-gray);
+		padding: 2rem;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.testimonial-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		margin-bottom: 1rem;
+	}
+
+	.customer-name {
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 0.25rem 0;
+	}
+
+	.customer-location {
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+		margin: 0;
+	}
+
+	.stars {
+		color: #fbbf24;
+		font-size: 1.1rem;
+	}
+
+	.testimonial-title {
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		margin: 0 0 1rem 0;
+	}
+
+	.testimonial-text {
+		color: var(--color-text);
+		line-height: 1.8;
+		margin: 0;
+		flex: 1;
+	}
+
+	@media (max-width: 768px) {
+		.director-testimonials {
+			padding: 3rem 0;
+		}
+
+		.section-title {
+			font-size: 1.75rem;
+		}
+
+		.director-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.testimonials-grid {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+	}
+</style>

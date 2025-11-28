@@ -1,0 +1,166 @@
+---
+---
+
+<section class="concerns">
+	<div class="container">
+		<h2 class="section-title">こんなお悩みはありませんか？</h2>
+		<ul class="concerns-list">
+			<li>✓ 産後の骨盤の歪みや開きが気になる</li>
+			<li>✓ 妊娠中の腰痛や身体の不調がつらい</li>
+			<li>✓ 慢性的な肩こり・腰痛に悩んでいる</li>
+			<li>✓ 冷え性や婦人科系の悩みがある</li>
+			<li>✓ 身体の歪みや姿勢が気になる</li>
+			<li>✓ リラックスしながらデトックスしたい</li>
+		</ul>
+		<div class="symptoms-grid">
+			<a href="#menu" class="symptom-button">
+				<span class="symptom-icon">🤰</span>
+				<span class="symptom-text">産後ケア</span>
+			</a>
+			<a href="#menu" class="symptom-button">
+				<span class="symptom-icon">👶</span>
+				<span class="symptom-text">マタニティ</span>
+			</a>
+			<a href="#menu" class="symptom-button">
+				<span class="symptom-icon">🤕</span>
+				<span class="symptom-text">腰痛</span>
+			</a>
+			<a href="#menu" class="symptom-button">
+				<span class="symptom-icon">😖</span>
+				<span class="symptom-text">肩こり</span>
+			</a>
+			<a href="#menu" class="symptom-button">
+				<span class="symptom-icon">❄️</span>
+				<span class="symptom-text">冷え性</span>
+			</a>
+			<a href="#menu" class="symptom-button">
+				<span class="symptom-icon">🧘</span>
+				<span class="symptom-text">姿勢改善</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<style>
+	.concerns {
+		padding: 4rem 0;
+		background: var(--color-bg-gray);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 2rem 0;
+		position: relative;
+		padding-bottom: 1rem;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 4px;
+		background: var(--color-primary);
+		border-radius: 2px;
+	}
+
+	.concerns-list {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 3rem 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.concerns-list li {
+		font-size: 1.1rem;
+		color: var(--color-text);
+		padding: 1rem;
+		background: white;
+		border-radius: 8px;
+		font-weight: 500;
+	}
+
+	.symptoms-grid {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 1rem;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.symptom-button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 1.5rem 1rem;
+		background: white;
+		border: 2px solid var(--color-border);
+		border-radius: 12px;
+		transition: all 0.3s;
+		cursor: pointer;
+	}
+
+	.symptom-button:hover {
+		border-color: var(--color-primary);
+		transform: translateY(-4px);
+		box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+	}
+
+	.symptom-icon {
+		font-size: 2rem;
+	}
+
+	.symptom-text {
+		font-weight: 700;
+		color: var(--color-text);
+		text-align: center;
+	}
+
+	@media (max-width: 768px) {
+		.concerns {
+			padding: 3rem 0;
+		}
+
+		.section-title {
+			font-size: 1.75rem;
+		}
+
+		.concerns-list {
+			grid-template-columns: 1fr;
+		}
+
+		.symptoms-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0.75rem;
+		}
+
+		.symptom-button {
+			padding: 1rem 0.5rem;
+		}
+
+		.symptom-icon {
+			font-size: 1.5rem;
+		}
+
+		.symptom-text {
+			font-size: 0.9rem;
+		}
+	}
+</style>

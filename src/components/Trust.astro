@@ -1,0 +1,212 @@
+---
+---
+
+<section class="trust">
+	<div class="container">
+		<div class="trust-content">
+			<div class="trust-stats">
+				<div class="stat-item">
+					<div class="stat-number">7万人</div>
+					<div class="stat-label">以上の症例実績</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">90%</div>
+					<div class="stat-label">初回で変化を実感</div>
+				</div>
+			</div>
+			<div class="trust-text">
+				<h2 class="trust-title">なぜ、他院では改善しないのか？</h2>
+				<div class="trust-description">
+					<p>
+						多くの整体院や整骨院では、痛みのある部分だけにアプローチしています。しかし、それでは根本的な改善には至りません。
+					</p>
+					<p>
+						痛みの<strong>本当の原因</strong>は、痛みを感じている場所とは別のところにあることがほとんどです。
+					</p>
+					<p>
+						当院では、身体全体のバランスを見て、<strong>痛みの根本原因</strong>から改善していきます。だからこそ、他院で改善しなかった方々が、当院で結果を出されているのです。
+					</p>
+				</div>
+				<div class="trust-approach">
+					<h3 class="approach-title">当院の3つのアプローチ</h3>
+					<ul class="approach-list">
+						<li>
+							<span class="approach-number">1</span>
+							<div class="approach-content">
+								<strong>徹底したカウンセリング</strong>
+								<p>症状の原因を根本から追求します</p>
+							</div>
+						</li>
+						<li>
+							<span class="approach-number">2</span>
+							<div class="approach-content">
+								<strong>全身のバランス調整</strong>
+								<p>痛みの部分だけでなく全身を整えます</p>
+							</div>
+						</li>
+						<li>
+							<span class="approach-number">3</span>
+							<div class="approach-content">
+								<strong>セルフケア指導</strong>
+								<p>再発防止のためのケア方法をお伝えします</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.trust {
+		padding: 4rem 0;
+		background: white;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.trust-content {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	.trust-stats {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.stat-item {
+		background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+		color: white;
+		padding: 2rem;
+		border-radius: 12px;
+		text-align: center;
+	}
+
+	.stat-number {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		line-height: 1;
+	}
+
+	.stat-label {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+
+	.trust-title {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1.5rem 0;
+	}
+
+	.trust-description {
+		color: var(--color-text);
+		line-height: 1.8;
+		margin-bottom: 2rem;
+	}
+
+	.trust-description p {
+		margin: 0 0 1rem 0;
+	}
+
+	.trust-description strong {
+		color: var(--color-primary);
+		font-weight: 700;
+	}
+
+	.trust-approach {
+		background: var(--color-bg-gray);
+		padding: 2rem;
+		border-radius: 12px;
+	}
+
+	.approach-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1.5rem 0;
+	}
+
+	.approach-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.approach-list li {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	.approach-number {
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+		background: var(--color-primary);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 1.25rem;
+	}
+
+	.approach-content {
+		flex: 1;
+	}
+
+	.approach-content strong {
+		display: block;
+		font-size: 1.1rem;
+		color: var(--color-text);
+		margin-bottom: 0.25rem;
+	}
+
+	.approach-content p {
+		margin: 0;
+		color: var(--color-text-light);
+	}
+
+	@media (max-width: 768px) {
+		.trust {
+			padding: 3rem 0;
+		}
+
+		.trust-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.trust-stats {
+			flex-direction: row;
+		}
+
+		.stat-number {
+			font-size: 2.5rem;
+		}
+
+		.trust-title {
+			font-size: 1.75rem;
+		}
+
+		.trust-approach {
+			padding: 1.5rem;
+		}
+	}
+</style>
