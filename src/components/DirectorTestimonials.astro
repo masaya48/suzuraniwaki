@@ -10,23 +10,38 @@
 					<div class="image-placeholder">院長写真</div>
 				</div>
 				<div class="director-text">
-					<h3 class="director-name">院長　山田 太郎</h3>
-					<p class="director-credentials">
-						柔道整復師 / 鍼灸師<br />
-						国家資格保持者
-					</p>
+					<h3 class="director-name">溱 友紀<span class="director-name-ruby">（みなとゆき）</span></h3>
+					<div class="director-info">
+						<div class="info-item">
+							<strong>治療家歴</strong>
+							<p>20年</p>
+						</div>
+						<div class="info-item">
+							<strong>施術回数</strong>
+							<p>25,000回以上</p>
+						</div>
+						<div class="info-item">
+							<strong>資格・免許</strong>
+							<p>柔道整復師<br />DRTエグゼクティブ</p>
+						</div>
+					</div>
 					<div class="director-message">
+						<h4 class="message-title">私の想い</h4>
+						<p class="message-subtitle">「このページへ辿りついた方へ」</p>
+						<p>きっとあなたも</p>
+						<ul class="concerns-check">
+							<li>色々な病院や整骨院、整体へ通ったけどなかなか改善しない</li>
+							<li>どこへ行っても何をしても良くならないと諦めかけている</li>
+							<li>この痛みや痺れのせいでやりたいことが出来なくなってしまっている</li>
+							<li>痛みのせいで気持ちまで暗くなってしまっている</li>
+						</ul>
+						<p>と悩み続けてこのサイトに辿りついたと思います</p>
 						<p>
-							はじめまして。整体院すずらん岩木の院長、山田太郎です。
+							私自身、妊娠中に腰痛と椎間板ヘルニアになり、ほぼ寝たきりの状態を経験。
 						</p>
 						<p>
-							私は20年以上、延べ7万人以上の方々の施術に携わってまいりました。その中で、「どこに行っても良くならなかった」「手術しかないと言われた」という方々が、当院の施術で改善されていく姿を数多く見てきました。
-						</p>
-						<p>
-							痛みには必ず原因があります。その原因を見つけ出し、根本から改善することで、多くの方が健康な生活を取り戻されています。
-						</p>
-						<p>
-							一人でも多くの方が、痛みのない快適な生活を送れるよう、全力でサポートさせていただきます。
+							<strong>"自分と同じように"</strong><br />
+							辛い思いをされて、今までずっと悩んでいた方が当院にいらした後、笑顔になって喜んで頂けたらという思いから治療家の道へ進みました。
 						</p>
 					</div>
 				</div>
@@ -135,33 +150,112 @@
 	.image-placeholder {
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
-		border-radius: 12px;
+		background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e1 100%);
+		border-radius: 24px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		color: var(--color-text-light);
 		font-weight: 500;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 	}
 
 	.director-name {
+		font-size: 1.75rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1.5rem 0;
+	}
+
+	.director-name-ruby {
+		font-size: 1rem;
+		font-weight: 500;
+		color: var(--color-text-light);
+		margin-left: 0.5rem;
+	}
+
+	.director-info {
+		display: flex;
+		gap: 2rem;
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		background: var(--color-bg-gray);
+		border-radius: 16px;
+		border: 1px solid var(--color-border);
+	}
+
+	.info-item {
+		flex: 1;
+	}
+
+	.info-item strong {
+		display: block;
+		font-size: 0.9rem;
+		color: var(--color-primary);
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+	}
+
+	.info-item p {
+		margin: 0;
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: var(--color-text);
+		line-height: 1.6;
+	}
+
+	.message-title {
 		font-size: 1.5rem;
 		font-weight: 700;
 		color: var(--color-text);
 		margin: 0 0 0.5rem 0;
 	}
 
-	.director-credentials {
+	.message-subtitle {
+		font-size: 1.1rem;
 		color: var(--color-primary);
-		font-weight: 500;
 		margin: 0 0 1.5rem 0;
-		line-height: 1.6;
+		font-weight: 600;
 	}
 
 	.director-message p {
 		color: var(--color-text);
 		line-height: 1.8;
 		margin: 0 0 1rem 0;
+	}
+
+	.director-message strong {
+		color: var(--color-primary);
+		font-weight: 700;
+	}
+
+	.concerns-check {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+		background: var(--color-bg-gray);
+		border-radius: 12px;
+		padding: 1.5rem;
+	}
+
+	.concerns-check li {
+		position: relative;
+		padding-left: 1.5rem;
+		margin-bottom: 0.75rem;
+		color: var(--color-text);
+		line-height: 1.7;
+	}
+
+	.concerns-check li:last-child {
+		margin-bottom: 0;
+	}
+
+	.concerns-check li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: var(--color-primary);
+		font-weight: 700;
 	}
 
 	.testimonials-grid {
@@ -172,10 +266,18 @@
 
 	.testimonial-card {
 		background: var(--color-bg-gray);
-		padding: 2rem;
-		border-radius: 12px;
+		padding: 2.5rem;
+		border-radius: 20px;
 		display: flex;
 		flex-direction: column;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+		border: 1px solid var(--color-border);
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+
+	.testimonial-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(125, 179, 232, 0.15);
 	}
 
 	.testimonial-header {
@@ -228,6 +330,31 @@
 		.director-content {
 			grid-template-columns: 1fr;
 			gap: 2rem;
+		}
+
+		.director-name {
+			font-size: 1.5rem;
+		}
+
+		.director-name-ruby {
+			display: block;
+			margin-left: 0;
+			margin-top: 0.25rem;
+			font-size: 0.9rem;
+		}
+
+		.director-info {
+			flex-direction: column;
+			gap: 1rem;
+			padding: 1.25rem;
+		}
+
+		.message-title {
+			font-size: 1.25rem;
+		}
+
+		.message-subtitle {
+			font-size: 1rem;
 		}
 
 		.testimonials-grid {

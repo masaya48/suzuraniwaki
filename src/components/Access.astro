@@ -1,0 +1,305 @@
+---
+---
+
+<section class="access" id="access">
+	<div class="container">
+		<h2 class="section-title">アクセス</h2>
+
+		<div class="access-content">
+			<div class="access-info">
+				<div class="info-section">
+					<h3 class="info-title">店舗情報</h3>
+					<dl class="info-list">
+						<dt>店舗名</dt>
+						<dd>からだサポートSUZURAN（すずらん）</dd>
+
+						<dt>住所</dt>
+						<dd>
+							〒973-8404<br />
+							福島県いわき市内郷内町四方北114-3
+						</dd>
+
+						<dt>電話番号</dt>
+						<dd>
+							<a href="tel:090-2999-3760" class="phone-link">090-2999-3760</a>
+						</dd>
+
+						<dt>営業日</dt>
+						<dd>月〜土・祝日</dd>
+
+						<dt>駐車場</dt>
+						<dd>あり（5台完備）</dd>
+					</dl>
+				</div>
+
+				<div class="info-section">
+					<h3 class="info-title">アクセス方法</h3>
+					<div class="access-method">
+						<div class="method-item">
+							<div class="method-icon">🚃</div>
+							<div class="method-text">
+								<strong>電車でお越しの方</strong>
+								<p>常磐線「内郷駅」から徒歩15分</p>
+							</div>
+						</div>
+						<div class="method-item">
+							<div class="method-icon">🚗</div>
+							<div class="method-text">
+								<strong>お車でお越しの方</strong>
+								<p>店舗前の駐車場をご利用ください（5台完備）</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="contact-buttons">
+					<a href="tel:090-2999-3760" class="btn-contact phone">
+						<span class="btn-icon">📞</span>
+						お電話でのご予約
+					</a>
+					<a href="https://suzuran-women.com/" target="_blank" class="btn-contact web">
+						<span class="btn-icon">🌐</span>
+						公式サイトはこちら
+					</a>
+				</div>
+			</div>
+
+			<div class="map-container">
+				<iframe
+					src="https://maps.google.com/maps?q=37.040028,140.857306&hl=ja&z=16&output=embed"
+					width="100%"
+					height="100%"
+					style="border:0;"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					title="からだサポートSUZURAN 地図"
+				></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.access {
+		padding: 4rem 0;
+		background: white;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 3rem 0;
+		position: relative;
+		padding-bottom: 1rem;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 4px;
+		background: var(--color-primary);
+		border-radius: 2px;
+	}
+
+	.access-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+	}
+
+	.access-info {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.info-section {
+		background: var(--color-bg-gray);
+		padding: 2.5rem;
+		border-radius: 24px;
+		border: 1px solid var(--color-border);
+	}
+
+	.info-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1.5rem 0;
+		padding-bottom: 1rem;
+		border-bottom: 2px solid var(--color-primary);
+	}
+
+	.info-list {
+		display: grid;
+		gap: 1.25rem;
+	}
+
+	.info-list dt {
+		font-weight: 700;
+		color: var(--color-primary);
+		font-size: 0.95rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.info-list dd {
+		margin: 0;
+		color: var(--color-text);
+		line-height: 1.7;
+		font-size: 1.05rem;
+	}
+
+	.phone-link {
+		color: var(--color-primary);
+		font-weight: 700;
+		font-size: 1.25rem;
+		transition: opacity 0.3s;
+	}
+
+	.phone-link:hover {
+		opacity: 0.7;
+	}
+
+	.access-method {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.method-item {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	.method-icon {
+		font-size: 2.5rem;
+		flex-shrink: 0;
+	}
+
+	.method-text strong {
+		display: block;
+		font-size: 1.1rem;
+		color: var(--color-text);
+		margin-bottom: 0.5rem;
+	}
+
+	.method-text p {
+		margin: 0;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.contact-buttons {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.btn-contact {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		padding: 1.25rem 2rem;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 1rem;
+		transition: all 0.3s;
+		text-align: center;
+		min-width: 200px;
+	}
+
+	.btn-contact.phone {
+		background: var(--color-primary);
+		color: white;
+		box-shadow: 0 4px 16px rgba(125, 179, 232, 0.3);
+	}
+
+	.btn-contact.phone:hover {
+		background: var(--color-secondary);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(125, 179, 232, 0.4);
+	}
+
+	.btn-contact.web {
+		background: white;
+		color: var(--color-primary);
+		border: 2px solid var(--color-primary);
+		box-shadow: 0 4px 16px rgba(125, 179, 232, 0.2);
+	}
+
+	.btn-contact.web:hover {
+		background: var(--color-bg-gray);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(125, 179, 232, 0.3);
+	}
+
+	.btn-icon {
+		font-size: 1.25rem;
+	}
+
+	.map-container {
+		position: relative;
+		border-radius: 24px;
+		overflow: hidden;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+		border: 2px solid var(--color-border);
+		aspect-ratio: 1;
+	}
+
+	.map-container iframe {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	@media (max-width: 768px) {
+		.access {
+			padding: 3rem 0;
+		}
+
+		.section-title {
+			font-size: 1.75rem;
+		}
+
+		.access-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.info-section {
+			padding: 2rem 1.5rem;
+		}
+
+		.info-title {
+			font-size: 1.25rem;
+		}
+
+		.contact-buttons {
+			flex-direction: column;
+		}
+
+		.btn-contact {
+			width: 100%;
+			min-width: auto;
+		}
+
+		.method-icon {
+			font-size: 2rem;
+		}
+	}
+</style>

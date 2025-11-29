@@ -5,9 +5,10 @@
 	<div class="header-top">
 		<div class="container">
 			<div class="header-content">
-				<div class="logo">
+				<a href="/" class="logo">
+					<img src="/logo.png" alt="からだサポートSUZURAN" class="logo-image" />
 					<h1>からだサポート<br />SUZURAN</h1>
-				</div>
+				</a>
 				<div class="header-info">
 					<div class="contact-info">
 						<div class="address">
@@ -28,11 +29,11 @@
 	<nav class="nav">
 		<div class="container">
 			<ul class="nav-list">
-				<li><a href="#home">HOME</a></li>
-				<li><a href="#first">初めての方</a></li>
-				<li><a href="#menu">メニュー</a></li>
-				<li><a href="#access">アクセス</a></li>
-				<li><a href="#price">料金表</a></li>
+				<li><a href="/">HOME</a></li>
+				<li><a href="/first">初めての方</a></li>
+				<li><a href="/menu">メニュー</a></li>
+				<li><a href="/access">アクセス</a></li>
+				<li><a href="/price">料金表</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -40,8 +41,8 @@
 
 <style>
 	.header {
-		background: white;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		background: var(--color-bg-light);
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 		position: sticky;
 		top: 0;
 		z-index: 100;
@@ -62,6 +63,19 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 2rem;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		text-decoration: none;
+	}
+
+	.logo-image {
+		width: 60px;
+		height: 60px;
+		object-fit: contain;
 	}
 
 	.logo h1 {

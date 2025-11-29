@@ -90,10 +90,11 @@
 	.concerns-list li {
 		font-size: 1.1rem;
 		color: var(--color-text);
-		padding: 1rem;
+		padding: 1.25rem;
 		background: white;
-		border-radius: 8px;
+		border-radius: 16px;
 		font-weight: 500;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 	}
 
 	.symptoms-grid {
@@ -112,15 +113,17 @@
 		padding: 1.5rem 1rem;
 		background: white;
 		border: 2px solid var(--color-border);
-		border-radius: 12px;
+		border-radius: 20px;
 		transition: all 0.3s;
 		cursor: pointer;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 	}
 
 	.symptom-button:hover {
 		border-color: var(--color-primary);
+		background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
 		transform: translateY(-4px);
-		box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+		box-shadow: 0 8px 20px rgba(125, 179, 232, 0.25);
 	}
 
 	.symptom-icon {
