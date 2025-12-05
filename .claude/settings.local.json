@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:mahounote-seitai.com)",
-      "WebFetch(domain:www.gurutto-iwaki.com)"
+      "WebFetch(domain:www.gurutto-iwaki.com)",
+      "Bash(pnpm run dev)",
+      "Skill(frontend-design)"
     ],
     "deny": [],
     "ask": []
