@@ -1,4 +1,5 @@
 ---
+import Icon from './Icon.astro';
 ---
 
 <section class="access" id="access">
@@ -36,14 +37,14 @@
 					<h3 class="info-title">アクセス方法</h3>
 					<div class="access-method">
 						<div class="method-item">
-							<div class="method-icon">🚃</div>
+							<Icon name="train" size={40} class="method-icon" />
 							<div class="method-text">
 								<strong>電車でお越しの方</strong>
 								<p>常磐線「内郷駅」から徒歩15分</p>
 							</div>
 						</div>
 						<div class="method-item">
-							<div class="method-icon">🚗</div>
+							<Icon name="car" size={40} class="method-icon" />
 							<div class="method-text">
 								<strong>お車でお越しの方</strong>
 								<p>店舗前の駐車場をご利用ください（5台完備）</p>
@@ -54,12 +55,12 @@
 
 				<div class="contact-buttons">
 					<a href="tel:090-2999-3760" class="btn-contact phone">
-						<span class="btn-icon">📞</span>
+						<Icon name="phone" size={20} class="btn-icon" />
 						お電話でのご予約
 					</a>
-					<a href="https://suzuran-women.com/" target="_blank" class="btn-contact web">
-						<span class="btn-icon">🌐</span>
-						公式サイトはこちら
+					<a href="line://ti/p/%40hss5518z" class="btn-contact line">
+						<img src="/LINE_Brand_icon.png" alt="LINE" class="line-icon" />
+						LINE予約
 					</a>
 				</div>
 			</div>
@@ -185,8 +186,8 @@
 	}
 
 	.method-icon {
-		font-size: 2.5rem;
 		flex-shrink: 0;
+		color: var(--color-primary);
 	}
 
 	.method-text strong {
@@ -235,21 +236,25 @@
 		box-shadow: 0 6px 20px rgba(125, 179, 232, 0.4);
 	}
 
-	.btn-contact.web {
-		background: white;
-		color: var(--color-primary);
-		border: 2px solid var(--color-primary);
-		box-shadow: 0 4px 16px rgba(125, 179, 232, 0.2);
+	.btn-contact.line {
+		background: linear-gradient(135deg, #06c755 0%, #00b900 100%);
+		color: white;
+		box-shadow: 0 4px 16px rgba(6, 199, 85, 0.3);
 	}
 
-	.btn-contact.web:hover {
-		background: var(--color-bg-gray);
+	.btn-contact.line:hover {
 		transform: translateY(-2px);
-		box-shadow: 0 6px 20px rgba(125, 179, 232, 0.3);
+		box-shadow: 0 6px 20px rgba(6, 199, 85, 0.4);
 	}
 
 	.btn-icon {
-		font-size: 1.25rem;
+		flex-shrink: 0;
+	}
+
+	.line-icon {
+		width: 20px;
+		height: 20px;
+		flex-shrink: 0;
 	}
 
 	.map-container {

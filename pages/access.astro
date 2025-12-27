@@ -1,0 +1,63 @@
+---
+import Layout from '../src/layouts/Layout.astro';
+import Header from '../src/components/Header.astro';
+import Footer from '../src/components/Footer.astro';
+import AccessComponent from '../src/components/Access.astro';
+---
+
+<Layout title="アクセス | からだサポートSUZURAN">
+	<Header />
+	<main>
+		<section class="page-header">
+			<div class="container">
+				<h1 class="page-title">アクセス</h1>
+				<p class="page-description">
+					ご来院方法・駐車場のご案内
+				</p>
+			</div>
+		</section>
+		<AccessComponent />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+		padding: 4rem 0 3rem;
+		text-align: center;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1rem 0;
+	}
+
+	.page-description {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.page-header {
+			padding: 3rem 0 2rem;
+		}
+
+		.page-title {
+			font-size: 2rem;
+		}
+
+		.page-description {
+			font-size: 1rem;
+		}
+	}
+</style>

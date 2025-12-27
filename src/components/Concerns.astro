@@ -1,42 +1,46 @@
 ---
+import Icon from './Icon.astro';
 ---
 
 <section class="concerns">
 	<div class="container">
-		<h2 class="section-title">こんなお悩みはありませんか？</h2>
+		<h2 class="section-title">このようなお悩みもお任せ下さい</h2>
 		<ul class="concerns-list">
-			<li>✓ 産後の骨盤の歪みや開きが気になる</li>
-			<li>✓ 妊娠中の腰痛や身体の不調がつらい</li>
-			<li>✓ 慢性的な肩こり・腰痛に悩んでいる</li>
-			<li>✓ 冷え性や婦人科系の悩みがある</li>
-			<li>✓ 身体の歪みや姿勢が気になる</li>
-			<li>✓ リラックスしながらデトックスしたい</li>
+			<li>✓ 頭や首・背中の痛みが良くならない</li>
+			<li>✓ 10年以上続く腰痛や肩こりがつらい</li>
+			<li>✓ 膝や股関節など下肢の痛み・しびれがつらい</li>
+			<li>✓ 坐骨神経痛で足の痺れが３ヶ月以上続いている</li>
+			<li>✓ 姿勢の悪さが気になる</li>
+			<li>✓ １日も早く健康になりたい</li>
 		</ul>
 		<div class="symptoms-grid">
-			<a href="#menu" class="symptom-button">
-				<span class="symptom-icon">🤰</span>
-				<span class="symptom-text">産後ケア</span>
+			<a href="/menu" class="symptom-button">
+				<Icon name="activity" size={36} class="symptom-icon" />
+				<span class="symptom-text">頭痛</span>
 			</a>
-			<a href="#menu" class="symptom-button">
-				<span class="symptom-icon">👶</span>
-				<span class="symptom-text">マタニティ</span>
-			</a>
-			<a href="#menu" class="symptom-button">
-				<span class="symptom-icon">🤕</span>
+			<a href="/menu" class="symptom-button">
+				<Icon name="zap" size={36} class="symptom-icon" />
 				<span class="symptom-text">腰痛</span>
 			</a>
-			<a href="#menu" class="symptom-button">
-				<span class="symptom-icon">😖</span>
+			<a href="/menu" class="symptom-button">
+				<Icon name="alert-circle" size={36} class="symptom-icon" />
 				<span class="symptom-text">肩こり</span>
 			</a>
-			<a href="#menu" class="symptom-button">
-				<span class="symptom-icon">❄️</span>
-				<span class="symptom-text">冷え性</span>
+			<a href="/menu" class="symptom-button">
+				<Icon name="move" size={36} class="symptom-icon" />
+				<span class="symptom-text">股関節痛</span>
 			</a>
-			<a href="#menu" class="symptom-button">
-				<span class="symptom-icon">🧘</span>
-				<span class="symptom-text">姿勢改善</span>
+			<a href="/menu" class="symptom-button">
+				<Icon name="zap" size={36} class="symptom-icon" />
+				<span class="symptom-text">坐骨神経痛</span>
 			</a>
+			<a href="/menu" class="symptom-button">
+				<Icon name="user" size={36} class="symptom-icon" />
+				<span class="symptom-text">姿勢矯正</span>
+			</a>
+		</div>
+		<div class="more-menu">
+			<a href="/menu" class="btn-more-menu">その他のお悩み</a>
 		</div>
 	</div>
 </section>
@@ -185,10 +189,10 @@
 	}
 
 	.symptom-icon {
-		font-size: 2.25rem;
 		position: relative;
 		z-index: 1;
 		transition: transform 0.4s;
+		color: var(--color-primary);
 	}
 
 	.symptom-button:hover .symptom-icon {
@@ -202,6 +206,46 @@
 		text-align: center;
 		position: relative;
 		z-index: 1;
+	}
+
+	.more-menu {
+		text-align: center;
+		margin-top: 2.5rem;
+	}
+
+	.btn-more-menu {
+		display: inline-block;
+		padding: 1rem 2.5rem;
+		background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+		color: white;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 1.05rem;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		box-shadow: 0 4px 16px rgba(212, 129, 111, 0.25);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.btn-more-menu::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	.btn-more-menu:hover::before {
+		opacity: 1;
+	}
+
+	.btn-more-menu:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 24px rgba(212, 129, 111, 0.35);
 	}
 
 	@media (max-width: 1024px) {

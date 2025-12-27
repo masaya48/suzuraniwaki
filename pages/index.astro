@@ -1,0 +1,57 @@
+---
+import Layout from '../src/layouts/Layout.astro';
+import Header from '../src/components/Header.astro';
+import Hero from '../src/components/Hero.astro';
+import RecommendedTreatments from '../src/components/RecommendedTreatments.astro';
+import Concerns from '../src/components/Concerns.astro';
+import Trust from '../src/components/Trust.astro';
+import Reasons from '../src/components/Reasons.astro';
+import BeforeAfter from '../src/components/BeforeAfter.astro';
+import DirectorGreeting from '../src/components/DirectorGreeting.astro';
+import CustomerVoices from '../src/components/CustomerVoices.astro';
+import Access from '../src/components/Access.astro';
+import Footer from '../src/components/Footer.astro';
+---
+
+<Layout>
+	<Header />
+	<main class="main-container">
+		<div class="main-content">
+			<Hero />
+			<RecommendedTreatments />
+			<Concerns />
+			<Trust />
+			<Reasons />
+			<BeforeAfter />
+			<DirectorGreeting />
+			<CustomerVoices />
+			<Access />
+		</div>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.main-container {
+		max-width: 1600px;
+		margin: 0 auto;
+		padding: 0 40px;
+	}
+
+	.main-content {
+		min-width: 0;
+	}
+
+	@media (max-width: 1024px) {
+		.main-container {
+			grid-template-columns: 1fr;
+			padding: 0 30px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.main-container {
+			padding: 0 20px;
+		}
+	}
+</style>

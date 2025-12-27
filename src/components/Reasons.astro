@@ -1,4 +1,13 @@
 ---
+import { Image } from "astro:assets";
+import shido from "../assets/shido.jpg";
+import tewaza from "../assets/tewaza.jpg";
+import shiseikaizen from "../assets/shiseikaizen.jpg";
+import counseling from "../assets/counseling.jpg";
+import kokkakuchosei from "../assets/kokkakuchosei.jpg";
+import drtnintei from "../assets/drt-nintei.jpg";
+import customer from "../assets/customer-voice.jpg";
+import tenpo from "../assets/tenpo.jpg";
 ---
 
 <section class="reasons" id="first">
@@ -7,58 +16,106 @@
 		<div class="reasons-grid">
 			<div class="reason-item">
 				<div class="reason-number">01</div>
-				<h3 class="reason-title">初回90%以上の変化実感</h3>
+				<div class="reason-image">
+					<Image
+						src={customer}
+						alt="患者さんの声の写真"
+					/>
+				</div>
+				<h3 class="reason-title">初回の施術で90%以上の方が変化を実感</h3>
 				<p class="reason-description">
-					多くの方が初回の施術で身体の変化を実感されています。痛みの軽減や可動域の改善など、目に見える変化を提供します。
+					1回の施術で90%以上の方から変化を実感していただいています。県外からも多くの方が来院されています。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">02</div>
-				<h3 class="reason-title">国家資格保持者が担当</h3>
+				<div class="reason-image">
+					<Image
+						src={drtnintei}
+						alt="DRTインストラクター"
+					/>
+				</div>
+				<h3 class="reason-title">DRTインストラクターの院長が施術を担当</h3>
 				<p class="reason-description">
-					柔道整復師・鍼灸師の国家資格を持つ院長が全ての施術を担当。豊富な知識と経験で安心の施術を提供します。
+					院長はDRT施術者としての技術が高く評価され、「DRTインストラクター」として認定されています。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">03</div>
-				<h3 class="reason-title">徹底したカウンセリング</h3>
+				<div class="reason-image">
+					<Image
+						src={counseling}
+						alt="カウンセリング"
+					/>
+				</div>
+				<h3 class="reason-title">症状の原因を特定する徹底したカウンセリング・検査</h3>
 				<p class="reason-description">
-					初回は90分かけてじっくりとカウンセリング。お身体の状態を詳しく分析し、最適な施術プランをご提案します。
+					問診→視診→触診→整形外科検査→筋力検査→姿勢分析→動作分析→施術→再検査の順番で、各部位ごとに効果を確認しながら進めます。ホワイトボードやタブレットでわかりやすく説明します。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">04</div>
-				<h3 class="reason-title">独自の施術メソッド</h3>
+				<div class="reason-image">
+					<Image
+						src={kokkakuchosei}
+						alt="筋膜リリース ✖ 骨格調整 ✖ 運動療法"
+					/>
+				</div>
+				<h3 class="reason-title">筋膜リリース ✖ 骨格調整 ✖ 運動療法</h3>
 				<p class="reason-description">
-					筋膜リリース × 骨格調整 × 運動療法を組み合わせた独自のメソッドで、根本からの改善を目指します。
+					アメリカ(St.Augustine大学)で科学的に証明された筋膜リリース、骨格調整で脊柱・骨盤の位置を改善、運動療法で筋肉のアンバランスを改善します。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">05</div>
-				<h3 class="reason-title">姿勢改善サポート</h3>
+				<div class="reason-image">
+					<Image
+						src={shiseikaizen}
+						alt="姿勢改善"
+					/>
+				</div>
+				<h3 class="reason-title">姿勢改善</h3>
 				<p class="reason-description">
-					痛みの原因となる姿勢の歪みを改善。日常生活での姿勢指導も行い、再発を防止します。
+					筋力低下と曲がった背中を改善して予防します。正しい姿勢を身につけることで、痛みの再発を防ぎます。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">06</div>
-				<h3 class="reason-title">セルフケア指導</h3>
+				<div class="reason-image">
+					<Image
+						src={shido}
+						alt="指導写真"
+					/>
+				</div>
+				<h3 class="reason-title">メンテナンス指導</h3>
 				<p class="reason-description">
-					ご自宅でできるストレッチやエクササイズを丁寧に指導。施術効果を長く維持していただけます。
+					日常生活のアドバイス、症状や生活環境に合わせた細かい指導を行います。施術効果を長く維持していただけます。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">07</div>
-				<h3 class="reason-title">手技のみの安全施術</h3>
+				<div class="reason-image">
+					<Image
+						src={tewaza}
+						alt="手技イラスト"
+					/>
+				</div>
+				<h3 class="reason-title">施術はすべて"手"</h3>
 				<p class="reason-description">
-					機械や器具は一切使用せず、手技のみで施術。お身体への負担が少なく、安全性の高い施術を提供します。
+					牽引・電気治療器は使わず、手のみで施術します。お身体への負担が少なく、安全性の高い施術を提供します。
 				</p>
 			</div>
 			<div class="reason-item">
 				<div class="reason-number">08</div>
-				<h3 class="reason-title">通いやすい環境</h3>
+				<div class="reason-image">
+					<Image
+						src={tenpo}
+						alt="営業時間イメージ"
+					/>
+				</div>
+				<h3 class="reason-title">平日はもちろん、土・祝日も営業！</h3>
 				<p class="reason-description">
-					完全予約制で待ち時間なし。土日祝も営業、夜21時まで受付で、お仕事帰りでも通いやすい環境です。
+					忙しい方も安心してご利用いただけます。ライフスタイルに合わせて来院可能です。
 				</p>
 			</div>
 		</div>
@@ -130,6 +187,32 @@
 		font-weight: 700;
 		color: rgba(37, 99, 235, 0.1);
 		line-height: 1;
+	}
+
+	.reason-image {
+		width: 100%;
+		margin-bottom: 1.5rem;
+		position: relative;
+		z-index: 1;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 16px;
+		}
+	}
+
+	.image-placeholder {
+		width: 100%;
+		aspect-ratio: 16/9;
+		background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e1 100%);
+		border-radius: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-text-light);
+		font-weight: 500;
+		font-size: 0.95rem;
 	}
 
 	.reason-title {

@@ -1,0 +1,51 @@
+---
+import * as LucideIcons from 'lucide-static';
+
+interface Props {
+	name: string;
+	class?: string;
+	size?: number;
+}
+
+const { name, class: className = '', size = 24 } = Astro.props;
+
+// Convert kebab-case to PascalCase (e.g., "map-pin" -> "MapPin")
+const toPascalCase = (str: string) => {
+	return str
+		.split('-')
+		.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+		.join('');
+};
+
+const iconName = toPascalCase(name);
+const iconData = LucideIcons[iconName as keyof typeof LucideIcons];
+
+if (!iconData) {
+	console.warn(`Icon "${name}" (${iconName}) not found in lucide-static`);
+}
+
+// Extract the SVG content from the icon data
+const svgContent = iconData ? iconData.replace(/<svg[^>]*>|<\/svg>/g, '') : '';
+---
+
+{iconData && (
+	<svg
+		class={`lucide-icon ${className}`}
+		width={size}
+		height={size}
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke="currentColor"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		set:html={svgContent}
+	/>
+)}
+
+<style>
+	.lucide-icon {
+		display: inline-block;
+		vertical-align: middle;
+	}
+</style>

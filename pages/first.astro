@@ -1,0 +1,69 @@
+---
+import Layout from '../src/layouts/Layout.astro';
+import Header from '../src/components/Header.astro';
+import Trust from '../src/components/Trust.astro';
+import Reasons from '../src/components/Reasons.astro';
+import Footer from '../src/components/Footer.astro';
+import DRTAbout from '../src/components/DRTAbout.astro';
+import DirectorGreeting from '../src/components/DirectorGreeting.astro';
+---
+
+<Layout title="初めての方 | からだサポートSUZURAN">
+	<Header />
+	<main>
+		<section class="page-header">
+			<div class="container">
+				<h1 class="page-title">初めての方へ</h1>
+				<p class="page-description">
+					当院が選ばれる理由と、院長の想いをご紹介します
+				</p>
+			</div>
+		</section>
+		<DRTAbout />
+		<Trust />
+		<Reasons />
+		<DirectorGreeting />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+		padding: 4rem 0 3rem;
+		text-align: center;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1rem 0;
+	}
+
+	.page-description {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		.page-header {
+			padding: 3rem 0 2rem;
+		}
+
+		.page-title {
+			font-size: 2rem;
+		}
+
+		.page-description {
+			font-size: 1rem;
+		}
+	}
+</style>

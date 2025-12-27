@@ -26,21 +26,27 @@
 			<div class="footer-nav">
 				<h4>メニュー</h4>
 				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#first">初めての方</a></li>
-					<li><a href="#menu">施術メニュー</a></li>
-					<li><a href="#access">アクセス</a></li>
-					<li><a href="https://suzuran-women.com/" target="_blank">公式サイト</a></li>
+					<li><a href="/">HOME</a></li>
+					<li><a href="/first">初めての方</a></li>
+					<li><a href="/menu">施術メニュー</a></li>
+					<li><a href="/access">アクセス</a></li>
+					<li><a href="/price">料金表</a></li>
 				</ul>
 			</div>
 			<div class="footer-symptoms">
 				<h4>施術メニュー</h4>
 				<ul>
-					<li>DRT整体</li>
-					<li>産後骨盤矯正</li>
-					<li>マタニティ整体</li>
-					<li>水素足湯デトックス</li>
-					<li>黄土よもぎ蒸し</li>
+					<li><a href="/menu/youtsuu">腰痛</a></li>
+					<li><a href="/menu/zutsuu">頭痛</a></li>
+					<li><a href="/menu/katakubi">肩こり・首の痛み</a></li>
+					<li><a href="/menu/kotsuban-kyousei">骨盤矯正</a></li>
+					<li><a href="/menu/hiza">膝痛</a></li>
+					<li><a href="/menu/zakotsu">坐骨神経痛</a></li>
+					<li><a href="/menu/hernia">椎間板ヘルニア</a></li>
+					<li><a href="/menu/kokansetsu">変形性股関節症</a></li>
+					<li><a href="/menu/straightneck">ストレートネック</a></li>
+					<li><a href="/menu/shisei-kaizen">姿勢改善</a></li>
+					<li><a href="/menu/sekichukankyousakushou">脊柱管狭窄症</a></li>
 				</ul>
 			</div>
 		</div>
@@ -189,7 +195,6 @@
 	}
 
 	.footer-symptoms li {
-		color: rgba(255, 255, 255, 0.85);
 		padding-left: 1.25rem;
 		position: relative;
 	}
@@ -200,6 +205,17 @@
 		left: 0;
 		color: var(--color-accent);
 		font-size: 1.2rem;
+	}
+
+	.footer-symptoms a {
+		color: rgba(255, 255, 255, 0.85);
+		transition: all 0.3s;
+		display: inline-block;
+	}
+
+	.footer-symptoms a:hover {
+		color: white;
+		transform: translateX(3px);
 	}
 
 	.footer-bottom {

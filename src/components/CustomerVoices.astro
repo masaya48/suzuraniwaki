@@ -1,0 +1,253 @@
+---
+---
+
+<section class="customer-voices">
+	<div class="container">
+		<h2 class="section-title">お喜びの声</h2>
+		<div class="voices-grid">
+			<div class="voice-card">
+				<div class="voice-content">
+					<h3 class="voice-title">妊娠中の頭痛と背中の痛みが改善！指圧が心地よかったです。</h3>
+					<div class="voice-text">
+						<p>
+							妊娠9週目で初めて来院しました。妊娠中で不安もありましたが、
+							優しい施術で安心して受けることができました。
+						</p>
+						<p>
+							指圧がとても心地よく、施術後はかなりスッキリしました。
+							頭痛や背中の痛みが軽減され、妊娠中も快適に過ごせるようになりました。
+						</p>
+					</div>
+					<div class="voice-author">
+						<p class="author-name">ぴとみん様</p>
+						<p class="author-info">いわき市在住 | 女性</p>
+					</div>
+					<p class="disclaimer">※お客様個人の感想であり、効果には個人差があります。</p>
+				</div>
+			</div>
+
+			<div class="voice-card">
+				<div class="voice-content">
+					<h3 class="voice-title">産後骨盤矯正で来院。子ども連れでも安心して通えます！</h3>
+					<div class="voice-text">
+						<p>
+							産後の骨盤矯正で通い始めました。2児のママで、子どもを連れての来院でしたが、
+							快く受け入れてくださり、とても助かりました。
+						</p>
+						<p>
+							丁寧な説明と親身な対応で、安心して施術を受けることができています。
+							産後の体の変化にも寄り添ってくださり、感謝しています。
+						</p>
+					</div>
+					<div class="voice-author">
+						<p class="author-name">2児ママ様</p>
+						<p class="author-info">いわき市在住 | 女性</p>
+					</div>
+					<p class="disclaimer">※お客様個人の感想であり、効果には個人差があります。</p>
+				</div>
+			</div>
+
+			<div class="voice-card">
+				<div class="voice-content">
+					<h3 class="voice-title">腰痛がとても楽になりました！優しい施術で安心です。</h3>
+					<div class="voice-text">
+						<p>
+							長年悩んでいた腰痛で来院しました。他の整体では強い力で押されて
+							痛みを感じることもありましたが、こちらは優しい施術で安心できました。
+						</p>
+						<p>
+							施術後は体がとても楽になり、日常生活での動きもスムーズになりました。
+							定期的に通いたいと思います。
+						</p>
+					</div>
+					<div class="voice-author">
+						<p class="author-name">南風様</p>
+						<p class="author-info">いわき市在住</p>
+					</div>
+					<p class="disclaimer">※お客様個人の感想であり、効果には個人差があります。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.customer-voices {
+		padding: 4rem 0;
+		background: var(--color-bg-gray);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.section-title {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 3rem 0;
+		position: relative;
+		padding-bottom: 1rem;
+	}
+
+	.section-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60px;
+		height: 4px;
+		background: var(--color-primary);
+		border-radius: 2px;
+	}
+
+	.voices-grid {
+		display: grid;
+		gap: 3rem;
+	}
+
+	.voice-card {
+		background: white;
+		border-radius: 24px;
+		overflow: hidden;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+		border: 1px solid var(--color-border);
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.voice-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 32px rgba(212, 129, 111, 0.15);
+	}
+
+	.voice-image {
+		width: 100%;
+		aspect-ratio: 16/9;
+	}
+
+	.image-placeholder {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e1 100%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-text-light);
+		font-weight: 500;
+	}
+
+	.voice-content {
+		padding: 2.5rem;
+	}
+
+	.voice-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		margin: 0 0 1.5rem 0;
+		line-height: 1.4;
+	}
+
+	.voice-text {
+		margin-bottom: 2rem;
+	}
+
+	.voice-text p {
+		color: var(--color-text);
+		line-height: 1.9;
+		margin: 0 0 1rem 0;
+	}
+
+	.voice-text p:last-child {
+		margin-bottom: 0;
+	}
+
+	.voice-author {
+		margin-bottom: 1rem;
+		padding: 1.25rem;
+		background: var(--color-bg-gray);
+		border-radius: 12px;
+	}
+
+	.author-name {
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 0.5rem 0;
+	}
+
+	.author-info {
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		margin: 0;
+	}
+
+	.disclaimer {
+		font-size: 0.85rem;
+		color: var(--color-text-light);
+		margin: 0;
+		font-style: italic;
+	}
+
+	.more-voices {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+	.btn-more-voices {
+		display: inline-block;
+		padding: 1rem 2.5rem;
+		background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+		color: white;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 1.05rem;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		box-shadow: 0 4px 16px rgba(212, 129, 111, 0.25);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.btn-more-voices::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	.btn-more-voices:hover::before {
+		opacity: 1;
+	}
+
+	.btn-more-voices:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 24px rgba(212, 129, 111, 0.35);
+	}
+
+	@media (max-width: 768px) {
+		.customer-voices {
+			padding: 3rem 0;
+		}
+
+		.section-title {
+			font-size: 1.75rem;
+		}
+
+		.voice-content {
+			padding: 2rem 1.5rem;
+		}
+
+		.voice-title {
+			font-size: 1.25rem;
+		}
+	}
+</style>

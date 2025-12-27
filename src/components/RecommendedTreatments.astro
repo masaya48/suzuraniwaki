@@ -3,58 +3,32 @@
 
 <section class="recommended">
 	<div class="container">
-		<h2 class="section-title">おすすめの施術メニュー</h2>
+		<h2 class="section-title">おすすめ施術</h2>
 		<div class="treatments-grid">
-			<div class="treatment-card">
-				<div class="treatment-image">
-					<div class="image-placeholder">DRT整体</div>
+			<a href="/menu/kokansetsu" class="treatment-banner">
+				<div class="banner-image">
+					<div class="image-placeholder">変形性股関節症専門施術</div>
 				</div>
-				<h3 class="treatment-title">DRT整体（背骨調整法）</h3>
-				<p class="treatment-description">
-					背骨を優しく揺らす独自の施術法。痛みがなく、身体に負担をかけずに背骨と骨盤のバランスを整えます。日本DRT協会インストラクターが施術を担当します。
-				</p>
-				<a href="#menu" class="treatment-link">詳しく見る →</a>
-			</div>
-			<div class="treatment-card">
-				<div class="treatment-image">
-					<div class="image-placeholder">産後骨盤矯正</div>
+				<div class="banner-content">
+					<h3 class="banner-title">変形性股関節症</h3>
+					<p class="banner-description">
+						手術を勧められた方、歩行に不安を感じている方へ。専門の施術で痛みを軽減し、歩行能力を改善します。
+					</p>
+					<span class="banner-link">詳しく見る →</span>
 				</div>
-				<h3 class="treatment-title">産後骨盤矯正</h3>
-				<p class="treatment-description">
-					出産後の骨盤の歪みや開きを整えます。産後の腰痛、体型の変化、尿もれなどのお悩みに対応。お子様連れでも安心してご来院いただけます。
-				</p>
-				<a href="#menu" class="treatment-link">詳しく見る →</a>
-			</div>
-			<div class="treatment-card">
-				<div class="treatment-image">
-					<div class="image-placeholder">マタニティ整体</div>
+			</a>
+			<a href="/menu/sekichuukan" class="treatment-banner">
+				<div class="banner-image">
+					<div class="image-placeholder">脊柱管狭窄症専門施術</div>
 				</div>
-				<h3 class="treatment-title">マタニティ整体</h3>
-				<p class="treatment-description">
-					妊娠中の腰痛、肩こり、むくみなどのお悩みに対応。妊婦さんの身体に負担をかけない優しい施術で、快適なマタニティライフをサポートします。
-				</p>
-				<a href="#menu" class="treatment-link">詳しく見る →</a>
-			</div>
-			<div class="treatment-card">
-				<div class="treatment-image">
-					<div class="image-placeholder">水素足湯</div>
+				<div class="banner-content">
+					<h3 class="banner-title">脊柱管狭窄症</h3>
+					<p class="banner-description">
+						間欠性跛行でお困りの方、手術を避けたい方へ。根本原因にアプローチし、症状の改善を目指します。
+					</p>
+					<span class="banner-link">詳しく見る →</span>
 				</div>
-				<h3 class="treatment-title">水素足湯デトックス</h3>
-				<p class="treatment-description">
-					水素の力で身体の老廃物を排出。冷え性改善、疲労回復、美容効果が期待できます。リラックスしながらデトックスできる人気のメニューです。
-				</p>
-				<a href="#menu" class="treatment-link">詳しく見る →</a>
-			</div>
-			<div class="treatment-card">
-				<div class="treatment-image">
-					<div class="image-placeholder">よもぎ蒸し</div>
-				</div>
-				<h3 class="treatment-title">黄土よもぎ蒸し</h3>
-				<p class="treatment-description">
-					韓国の伝統的な温浴法。黄土の遠赤外線効果とよもぎの薬草成分で、身体を芯から温めます。冷え性、婦人科系のお悩み、美肌効果に最適です。
-				</p>
-				<a href="#menu" class="treatment-link">詳しく見る →</a>
-			</div>
+			</a>
 		</div>
 	</div>
 </section>
@@ -95,70 +69,78 @@
 
 	.treatments-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 2rem;
 	}
 
-	@media (max-width: 992px) {
-		.treatments-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	.treatment-card {
+	.treatment-banner {
 		background: white;
-		border: 1px solid var(--color-border);
-		border-radius: 20px;
+		border: 2px solid var(--color-border);
+		border-radius: 24px;
 		overflow: hidden;
-		transition: transform 0.3s, box-shadow 0.3s;
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		display: block;
+		text-decoration: none;
 	}
 
-	.treatment-card:hover {
-		transform: translateY(-6px);
-		box-shadow: 0 12px 32px rgba(125, 179, 232, 0.2);
+	.treatment-banner:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 16px 48px rgba(212, 129, 111, 0.25);
+		border-color: var(--color-primary);
 	}
 
-	.treatment-image {
+	.banner-image {
 		width: 100%;
-		aspect-ratio: 16/9;
+		aspect-ratio: 2/1;
 		overflow: hidden;
 	}
 
 	.image-placeholder {
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(135deg, #f5f3f0 0%, #e8e4e1 100%);
+		background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-light) 100%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: var(--color-text-light);
-		font-weight: 500;
-	}
-
-	.treatment-title {
-		font-size: 1.5rem;
-		font-weight: 700;
-		color: var(--color-text);
-		margin: 1.5rem 1.5rem 1rem 1.5rem;
-	}
-
-	.treatment-description {
-		color: var(--color-text-light);
-		line-height: 1.8;
-		margin: 0 1.5rem 1.5rem 1.5rem;
-	}
-
-	.treatment-link {
-		display: inline-block;
-		margin: 0 1.5rem 1.5rem 1.5rem;
 		color: var(--color-primary);
 		font-weight: 700;
-		transition: gap 0.3s;
+		font-size: 1.25rem;
+		transition: all 0.3s;
 	}
 
-	.treatment-link:hover {
-		text-decoration: underline;
+	.treatment-banner:hover .image-placeholder {
+		transform: scale(1.05);
+	}
+
+	.banner-content {
+		padding: 2rem;
+	}
+
+	.banner-title {
+		font-size: 1.75rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin: 0 0 1rem 0;
+		font-family: var(--font-display);
+	}
+
+	.banner-description {
+		color: var(--color-text-light);
+		line-height: 1.8;
+		margin: 0 0 1rem 0;
+		font-size: 1.05rem;
+	}
+
+	.banner-link {
+		display: inline-block;
+		color: var(--color-primary);
+		font-weight: 700;
+		transition: all 0.3s;
+	}
+
+	.treatment-banner:hover .banner-link {
+		transform: translateX(4px);
 	}
 
 	@media (max-width: 768px) {

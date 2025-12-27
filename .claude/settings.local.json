@@ -4,9 +4,20 @@
       "WebFetch(domain:mahounote-seitai.com)",
       "WebFetch(domain:www.gurutto-iwaki.com)",
       "Bash(pnpm run dev)",
-      "Skill(frontend-design)"
+      "Skill(frontend-design)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_evaluate",
+      "Bash(pnpm add:*)",
+      "WebFetch(domain:www.line.me)",
+      "Bash(curl:*)",
+      "Bash(unzip:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "playwright"
+  ]
 }
