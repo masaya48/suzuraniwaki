@@ -1,11 +1,14 @@
 ---
+import { Image } from 'astro:assets';
 import Icon from './Icon.astro';
+import logoImage from '../assets/logo.png';
+import lineIcon from '../assets/LINE_Brand_icon.png';
 ---
 
 <aside class="sidebar">
 	<div class="sidebar-content">
 		<div class="sidebar-header">
-			<img src="/logo.png" alt="からだサポートSUZURAN" class="sidebar-logo" />
+			<Image src={logoImage} alt="からだサポートSUZURAN" class="sidebar-logo" />
 			<h3 class="sidebar-title">ご予約・お問合せ</h3>
 		</div>
 
@@ -38,7 +41,7 @@ import Icon from './Icon.astro';
 				<span class="btn-text">電話予約</span>
 			</a>
 			<a href="line://ti/p/%40hss5518z" class="btn-reservation line">
-				<img src="/LINE_Brand_icon.png" alt="LINE" class="line-icon" />
+				<Image src={lineIcon} alt="LINE" width={20} height={20} class="line-icon" />
 				<span class="btn-text">LINE予約</span>
 			</a>
 		</div>

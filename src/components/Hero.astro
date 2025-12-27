@@ -5,6 +5,7 @@ import top1 from '../assets/top1.jpg';
 import top2 from '../assets/top2.jpg';
 import top3 from '../assets/top3.jpg';
 import top4 from '../assets/top4.jpg';
+import lineIcon from '../assets/LINE_Brand_icon.png';
 ---
 
 <section class="hero" id="home">
@@ -52,7 +53,7 @@ import top4 from '../assets/top4.jpg';
 					</span>
 				</a>
 				<a href="line://ti/p/%40hss5518z" class="btn-secondary">
-					<img src="/LINE_Brand_icon.png" alt="LINE" class="line-icon" />
+					<Image src={lineIcon} alt="LINE" width={24} height={24} class="line-icon" />
 					<span class="btn-text-simple">LINE予約</span>
 				</a>
 			</div>
@@ -156,6 +157,7 @@ import top4 from '../assets/top4.jpg';
 
 	.hero-title-line {
 		display: block;
+		white-space: nowrap;
 		background: linear-gradient(
 			135deg,
 			var(--color-text) 0%,
@@ -477,7 +479,7 @@ import top4 from '../assets/top4.jpg';
 		}
 
 		.hero-title {
-			font-size: 3rem;
+			font-size: 2.75rem;
 		}
 	}
 
@@ -494,7 +496,7 @@ import top4 from '../assets/top4.jpg';
 		}
 
 		.hero-title {
-			font-size: 2.25rem;
+			font-size: 2rem;
 		}
 
 		.hero-features {
@@ -522,6 +524,18 @@ import top4 from '../assets/top4.jpg';
 
 		.hero-image-placeholder {
 			aspect-ratio: 4/3;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero-title {
+			font-size: 1.65rem;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.hero-title {
+			font-size: 1.4rem;
 		}
 	}
 </style>

@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import Icon from './Icon.astro';
+import lineIcon from '../assets/LINE_Brand_icon.png';
 ---
 
 <section class="access" id="access">
@@ -59,7 +61,7 @@ import Icon from './Icon.astro';
 						お電話でのご予約
 					</a>
 					<a href="line://ti/p/%40hss5518z" class="btn-contact line">
-						<img src="/LINE_Brand_icon.png" alt="LINE" class="line-icon" />
+						<Image src={lineIcon} alt="LINE" width={20} height={20} class="line-icon" />
 						LINE予約
 					</a>
 				</div>

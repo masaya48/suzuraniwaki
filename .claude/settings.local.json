@@ -11,7 +11,8 @@
       "Bash(pnpm add:*)",
       "WebFetch(domain:www.line.me)",
       "Bash(curl:*)",
-      "Bash(unzip:*)"
+      "Bash(unzip:*)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import Icon from './Icon.astro';
+import logoImage from '../assets/logo.png';
+import lineIcon from '../assets/LINE_Brand_icon.png';
 ---
 
 <header class="header">
@@ -8,7 +10,7 @@ import Icon from './Icon.astro';
 		<div class="container">
 			<div class="header-content">
 				<a href="/" class="logo">
-					<img src="/logo.png" alt="からだサポートSUZURAN" class="logo-image" />
+					<Image src={logoImage} alt="からだサポートSUZURAN" class="logo-image" />
 					<h1>からだサポート<br />SUZURAN</h1>
 				</a>
 				<div class="header-info">
@@ -25,7 +27,7 @@ import Icon from './Icon.astro';
 						</div>
 					</div>
 					<a href="line://ti/p/%40hss5518z" class="btn-line">
-					<Image src="/LINE_Brand_icon.png" alt="LINE" width={24} height={24} class="line-icon" />
+					<Image src={lineIcon} alt="LINE" width={24} height={24} class="line-icon" />
 					LINE予約
 				</a>
 				</div>

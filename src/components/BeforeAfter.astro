@@ -3,12 +3,15 @@ import { Image } from 'astro:assets';
 import imgSangoyoutuu from '../assets/before-after-sangoyoutuu.jpg';
 import imgZutuuPms from '../assets/before-after-zutuu-pms.jpg';
 import imgSiseikaizen from '../assets/before-after-siseikaizen.jpg';
-import imgKeituiherunia from '../assets/before-after-keituiherunia.jpg';
 import imgSokuwansyo from '../assets/before-after-sokuwansyo.jpg';
 import imgHidarihanketubansonsyo from '../assets/before-after-hidarihanketubansonsyo.jpg';
 import imgHijinoitami from '../assets/before-after-hijinoitami.jpg';
-import imgKeituiherniaUdenosibire from '../assets/before-after-keituiherunia-udenosibire.jpg';
-import imgKeituiherunia3 from '../assets/before-after-keituiherunia3.jpg';
+import imgKeituiherniaUdenosibire1 from '../assets/before-after-keituiherunia-udenosibire1.jpg';
+import imgKeituiherniaUdenosibire2 from '../assets/before-after-keituiherunia-udenosibire2.jpg';
+import imgKeituiherniaUdenosibire3 from '../assets/before-after-keituiherunia-udenosibire3.jpg';
+import imgYoutuusuberisyo1 from '../assets/before-after-youtuusuberisyo1.jpg';
+import imgYoutuusuberisyo2 from '../assets/before-after-youtuusuberisyo2.jpg';
+import imgYoutuusuberisyo3 from '../assets/before-after-youtuusuberisyo3.jpg';
 ---
 
 <section class="before-after">
@@ -72,23 +75,6 @@ import imgKeituiherunia3 from '../assets/before-after-keituiherunia3.jpg';
 				<div class="case-card">
 					<div class="case-image">
 						<Image
-							src={imgKeituiherunia}
-							alt="頸椎ヘルニア改善の事例"
-							loading="lazy"
-						/>
-					</div>
-					<div class="case-content">
-						<h4 class="case-title">頸椎ヘルニアの痛みが改善！</h4>
-						<p class="case-description">
-							頸椎ヘルニアによる首の痛みに悩まされていましたが、
-							施術により痛みが軽減し、日常生活が楽になりました。
-						</p>
-					</div>
-				</div>
-
-				<div class="case-card">
-					<div class="case-image">
-						<Image
 							src={imgSokuwansyo}
 							alt="側弯症改善の事例"
 							loading="lazy"
@@ -137,37 +123,87 @@ import imgKeituiherunia3 from '../assets/before-after-keituiherunia3.jpg';
 					</div>
 				</div>
 
-				<div class="case-card">
-					<div class="case-image">
-						<Image
-							src={imgKeituiherniaUdenosibire}
-							alt="頸椎ヘルニア・腕のしびれ改善事例"
-							loading="lazy"
-						/>
-					</div>
-					<div class="case-content">
+				<div class="case-card-series">
+					<div class="series-header">
 						<h4 class="case-title">頸椎ヘルニアによる腕のしびれが改善！</h4>
 						<p class="case-description">
 							頸椎ヘルニアによる腕のしびれと痛みに悩んでいましたが、
 							施術により症状が軽減し、腕が動かしやすくなりました。
 						</p>
 					</div>
+					<div class="series-images">
+						<div class="series-image-item">
+							<div class="series-label">背面</div>
+							<div class="case-image">
+								<Image
+									src={imgKeituiherniaUdenosibire1}
+									alt="頸椎ヘルニア・腕のしびれ 背面"
+									loading="lazy"
+								/>
+							</div>
+						</div>
+						<div class="series-image-item">
+							<div class="series-label">正面</div>
+							<div class="case-image">
+								<Image
+									src={imgKeituiherniaUdenosibire2}
+									alt="頸椎ヘルニア・腕のしびれ 正面"
+									loading="lazy"
+								/>
+							</div>
+						</div>
+						<div class="series-image-item">
+							<div class="series-label">側面</div>
+							<div class="case-image">
+								<Image
+									src={imgKeituiherniaUdenosibire3}
+									alt="頸椎ヘルニア・腕のしびれ 側面"
+									loading="lazy"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div class="case-card">
-					<div class="case-image">
-						<Image
-							src={imgKeituiherunia3}
-							alt="頸椎ヘルニア改善事例3"
-							loading="lazy"
-						/>
-					</div>
-					<div class="case-content">
-						<h4 class="case-title">慢性的な首の痛みが改善！</h4>
+				<div class="case-card-series">
+					<div class="series-header">
+						<h4 class="case-title">腰痛すべり症・変形性膝関節症が改善！</h4>
 						<p class="case-description">
-							頸椎ヘルニアによる慢性的な首の痛みに長年悩んでいましたが、
-							施術により痛みが軽減し、首の動きが楽になりました。
+							腰痛すべり症・変形性膝関節症により腰から膝への痛みで歩行困難でしたが、
+							施術により症状が改善し、楽に歩けるようになりました。
 						</p>
+					</div>
+					<div class="series-images">
+						<div class="series-image-item">
+							<div class="series-label">背面</div>
+							<div class="case-image">
+								<Image
+									src={imgYoutuusuberisyo1}
+									alt="腰痛すべり症・変形性膝関節症 背面"
+									loading="lazy"
+								/>
+							</div>
+						</div>
+						<div class="series-image-item">
+							<div class="series-label">側面</div>
+							<div class="case-image">
+								<Image
+									src={imgYoutuusuberisyo2}
+									alt="腰痛すべり症・変形性膝関節症 側面"
+									loading="lazy"
+								/>
+							</div>
+						</div>
+						<div class="series-image-item">
+							<div class="series-label">前傾姿勢</div>
+							<div class="case-image">
+								<Image
+									src={imgYoutuusuberisyo3}
+									alt="腰痛すべり症・変形性膝関節症 前傾姿勢"
+									loading="lazy"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -276,6 +312,55 @@ import imgKeituiherunia3 from '../assets/before-after-keituiherunia3.jpg';
 		box-shadow: 0 12px 32px rgba(212, 129, 111, 0.15);
 	}
 
+	.case-card-series {
+		grid-column: span 3;
+		background: var(--color-bg-gray);
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+		border: 1px solid var(--color-border);
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.case-card-series:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 32px rgba(212, 129, 111, 0.15);
+	}
+
+	.series-header {
+		padding: 2rem 2rem 1.5rem 2rem;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.series-images {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+
+	.series-image-item {
+		position: relative;
+		border-right: 1px solid var(--color-border);
+	}
+
+	.series-image-item:last-child {
+		border-right: none;
+	}
+
+	.series-label {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		background: var(--color-primary);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 8px;
+		font-weight: 700;
+		font-size: 0.875rem;
+		z-index: 10;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	}
+
 	.case-image {
 		width: 100%;
 		aspect-ratio: 3/4;
@@ -327,6 +412,10 @@ import imgKeituiherunia3 from '../assets/before-after-keituiherunia3.jpg';
 		.cases-grid {
 			grid-template-columns: repeat(2, 1fr);
 		}
+
+		.case-card-series {
+			grid-column: span 2;
+		}
 	}
 
 	@media (max-width: 768px) {
@@ -352,6 +441,27 @@ import imgKeituiherunia3 from '../assets/before-after-keituiherunia3.jpg';
 
 		.case-content {
 			padding: 1.5rem;
+		}
+
+		.case-card-series {
+			grid-column: span 1;
+		}
+
+		.series-header {
+			padding: 1.5rem;
+		}
+
+		.series-images {
+			grid-template-columns: 1fr;
+		}
+
+		.series-image-item {
+			border-right: none;
+			border-bottom: 1px solid var(--color-border);
+		}
+
+		.series-image-item:last-child {
+			border-bottom: none;
 		}
 	}
 </style>
