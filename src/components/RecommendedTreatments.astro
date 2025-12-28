@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+import imgKokansetsutuu from '../assets/kokansetsutuu.png';
+import imgYoutuu from '../assets/youtuu.png';
+
 ---
 
 <section class="recommended">
@@ -7,7 +11,10 @@
 		<div class="treatments-grid">
 			<a href="/menu/kokansetsu" class="treatment-banner">
 				<div class="banner-image">
-					<div class="image-placeholder">変形性股関節症専門施術</div>
+					<Image
+						src={imgKokansetsutuu}
+						alt="変形性股関節症"
+					/>
 				</div>
 				<div class="banner-content">
 					<h3 class="banner-title">変形性股関節症</h3>
@@ -19,7 +26,10 @@
 			</a>
 			<a href="/menu/sekichuukan" class="treatment-banner">
 				<div class="banner-image">
-					<div class="image-placeholder">脊柱管狭窄症専門施術</div>
+					<Image
+						src={imgYoutuu}
+						alt="脊柱管狭窄症"
+					/>
 				</div>
 				<div class="banner-content">
 					<h3 class="banner-title">脊柱管狭窄症</h3>

@@ -12,7 +12,10 @@
       "WebFetch(domain:www.line.me)",
       "Bash(curl:*)",
       "Bash(unzip:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(for file in *.astro)",
+      "Bash(do sed -i '' 's/6,000円/3,500円/g; s/5,000円/6,500円/g' \"$file\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
