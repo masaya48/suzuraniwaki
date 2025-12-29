@@ -321,11 +321,11 @@
 		}
 
 		.stat-number {
-			font-size: 2.75rem;
+			font-size: 2.5rem;
 		}
 
 		.stat-label {
-			font-size: 0.95rem;
+			font-size: 0.9rem;
 		}
 
 		.trust-title {
@@ -352,6 +352,119 @@
 			width: 45px;
 			height: 45px;
 			font-size: 1.3rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.trust {
+			padding: 2.5rem 0;
+		}
+
+		.container {
+			padding: 0 16px;
+		}
+
+		.trust-content {
+			gap: 2rem;
+		}
+
+		.trust-stats {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+
+		.stat-item {
+			padding: 1.75rem 1.25rem;
+		}
+
+		.stat-number {
+			font-size: 2rem;
+		}
+
+		.stat-label {
+			font-size: 0.85rem;
+			line-height: 1.4;
+		}
+
+		.trust-title {
+			font-size: 1.75rem;
+			line-height: 1.4;
+			margin-bottom: 1.5rem;
+		}
+
+		.trust-description {
+			font-size: 1rem;
+			margin-bottom: 2rem;
+		}
+
+		.trust-approach {
+			padding: 1.5rem;
+		}
+
+		.approach-title {
+			font-size: 1.3rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.approach-list {
+			gap: 1.25rem;
+		}
+
+		.approach-list li {
+			padding: 1rem;
+			gap: 1rem;
+		}
+
+		.approach-list li:hover {
+			transform: translateX(4px);
+		}
+
+		.approach-number {
+			width: 40px;
+			height: 40px;
+			font-size: 1.2rem;
+		}
+
+		.approach-content strong {
+			font-size: 1.05rem;
+		}
+
+		.approach-content p {
+			font-size: 0.95rem;
+		}
+	}
+
+	@media (max-width: 375px) {
+		.container {
+			padding: 0 12px;
+		}
+
+		.stat-number {
+			font-size: 1.75rem;
+		}
+
+		.stat-label {
+			font-size: 0.8rem;
+		}
+
+		.trust-title {
+			font-size: 1.5rem;
+		}
+
+		.trust-description {
+			font-size: 0.95rem;
+		}
+
+		.approach-title {
+			font-size: 1.2rem;
+		}
+
+		.approach-content strong {
+			font-size: 1rem;
+		}
+
+		.approach-content p {
+			font-size: 0.9rem;
 		}
 	}
 </style>
