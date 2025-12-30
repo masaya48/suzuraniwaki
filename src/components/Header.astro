@@ -26,10 +26,12 @@ import lineIcon from '../assets/LINE_Brand_icon.png';
 							</a>
 						</div>
 					</div>
+				<div class="header-reservation">
 					<a href="line://ti/p/%40hss5518z" class="btn-line">
 						<Image src={lineIcon} alt="LINE" width={24} height={24} class="line-icon" />
 					LINE予約
 				</a>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -151,6 +153,19 @@ import lineIcon from '../assets/LINE_Brand_icon.png';
 
 	.phone-icon {
 		flex-shrink: 0;
+	}
+
+	.header-reservation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.reservation-info-small {
+		font-size: 0.75rem;
+		color: var(--color-accent);
+		font-weight: 700;
 	}
 
 	.btn-line {
