@@ -11,7 +11,9 @@
 			<div class="menu-item-large">
 				<div class="menu-header">
 					<h4 class="menu-name">初回</h4>
+					<p class="menu-name-description">9,000円が、ホームページを見てくれた方限定</p>
 				</div>
+
 				<div class="menu-price">3,500円</div>
 				<p class="menu-description">
 					初めての方限定のお得な料金です
@@ -26,18 +28,6 @@
 				<p class="menu-description">
 					腰痛、肩こり、背中の痛みなど、お辛い症状をご相談ください
 				</p>
-			</div>
-
-			<div class="ticket-card special" style="margin-top: 2rem;">
-				<div class="ticket-badge">お得</div>
-				<h4 class="ticket-title">回数券</h4>
-				<div class="ticket-content">
-					<div class="ticket-info">
-						<span class="ticket-count">10回券</span>
-						<span class="ticket-price">55,000円</span>
-					</div>
-					<p class="ticket-note">1回あたり<strong>5,500円</strong>に</p>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -147,6 +137,7 @@
 
 	.menu-header {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 1rem;
@@ -157,6 +148,11 @@
 		font-weight: 700;
 		color: var(--color-text);
 		margin: 0;
+	}
+
+	.menu-name-description {
+		font-size: 1.25rem;
+		font-weight: normal;
 	}
 
 	.menu-duration {

@@ -1,4 +1,14 @@
 ---
+import drtManga01 from '../assets/drt-manga-01.jpg';
+import drtManga02 from '../assets/drt-manga-02.jpg';
+import drtManga03 from '../assets/drt-manga-03.jpg';
+import drtManga04 from '../assets/drt-manga-04.jpg';
+import drtManga05 from '../assets/drt-manga-05.jpg';
+import drtManga06 from '../assets/drt-manga-06.jpg';
+import drtManga07 from '../assets/drt-manga-07.jpg';
+import drtManga08 from '../assets/drt-manga-08.jpg';
+import drtManga09 from '../assets/drt-manga-09.jpg';
+import drtManga10 from '../assets/drt-manga-10.jpg';
 ---
 
 <section class="drt-about" id="menu">
@@ -43,6 +53,49 @@
 					</div>
 				</div>
 				<p class="name-caption">の頭文字を表しています。</p>
+
+			<div class="manga-section">
+				<div class="manga-item">
+					<div class="manga-number">1</div>
+					<img src={drtManga01.src} alt="DRT漫画 1" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">2</div>
+					<img src={drtManga02.src} alt="DRT漫画 2" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">3</div>
+					<img src={drtManga03.src} alt="DRT漫画 3" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">4</div>
+					<img src={drtManga04.src} alt="DRT漫画 4" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">5</div>
+					<img src={drtManga05.src} alt="DRT漫画 5" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">6</div>
+					<img src={drtManga06.src} alt="DRT漫画 6" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">7</div>
+					<img src={drtManga07.src} alt="DRT漫画 7" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">8</div>
+					<img src={drtManga08.src} alt="DRT漫画 8" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">9</div>
+					<img src={drtManga09.src} alt="DRT漫画 9" class="manga-image" />
+				</div>
+				<div class="manga-item">
+					<div class="manga-number">10</div>
+					<img src={drtManga10.src} alt="DRT漫画 10" class="manga-image" />
+				</div>
+			</div>
 			</div>
 		</div>
 
@@ -406,6 +459,48 @@
 		font-weight: 700;
 	}
 
+	.manga-section {
+		margin-top: 3rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+
+	.manga-item {
+		position: relative;
+	}
+
+	.manga-number {
+		position: absolute;
+		top: -16px;
+		left: -16px;
+		background: var(--color-primary);
+		color: white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 1.1rem;
+		box-shadow: 0 4px 12px rgba(125, 179, 232, 0.4);
+		z-index: 1;
+	}
+
+	.manga-image {
+		width: 100%;
+		height: auto;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+
+	.manga-item:hover .manga-image {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	}
+
 	@media (max-width: 768px) {
 		.drt-about {
 			padding: 3rem 0;
@@ -481,6 +576,12 @@
 
 		.pricing-explanation {
 			padding: 1.5rem;
+		}
+
+		.manga-section {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			margin-top: 2rem;
 		}
 	}
 </style>
